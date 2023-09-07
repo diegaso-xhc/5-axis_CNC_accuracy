@@ -3,43 +3,31 @@
 ## Overview of the repostitory
 <div align="justify">
 Five axis CNCs are essential for the manufacturing of highly complex mechanical parts. In some applications, such as aerospace industry, the low error tolerances for the dimensions of a mechanical part, requires an extremely high accuracy on the manufacturing CNCs. 
+
 <br />
+
 A common measurement of the accuracy of a five axis CNC is the circularity of the outter circle of a cone frustum tilted in space. After the CNC being evaluated finishes the material remotion from this cone frustum, precision tools are used to sample points around its circumference. However, extracting the circularity values of this points set is not trivial as the number of points, positions, among other parameters, change depending on the control parameters of the machine, the operator using the measurement tool, etc. 
+
 <br />
+
 This repository shows a Matlab implementation of an algorithm customized for the circularity measurements of five axis CNC via manufacturing of a cone frustum.
 <br />
 <br /> 
- <p align="center">
+
+<p align="center">
    <img src="/Visualizations/Circularity_plot.png" width="700" />
 </p>
+
 <br />
 
 ## Understanding repository
 
 The repository consists of a versatile toolbox to handle objects in space using concepts of linear algebra. Machine learning concepts such as gradient descent methods in combination with normal distributions concepts were implemented to robustly return the circularity value under different conditions. These algorithms were validated in cooperation with the <a href="https://www.itri.org.tw/english/ListStyle.aspx?DisplayStyle=20&SiteID=1&MmmID=617731521661672477">Industrial Technology Research Institute of Taiwan</a>.
+
 <br />
-https://www.itri.org.tw/english/ListStyle.aspx?DisplayStyle=20&SiteID=1&MmmID=617731521661672477
 
-```
-- Microsoft Visual Studio Community 2019 (Version 16.11.29)
-- Target Framework: .NET Framework 4.6.1
-- OxyPlot.Wpf (Version 2.1.2) --> Can be installed using NuGet package manager
-- OxyPlot (Version 2.1.2) --> Can be installed using NuGet package manager
-- OxyPlot.Wpf.Shared (Version 2.1.2) --> Can be installed using NuGet package manager
-```
+Additionally all functions within the repository were written so they can be easily translated into other languages, such as c++, c#, python. Therefore, proprietary functions have only been included for visualization.
 
-The project has been compiled using the aforementioned libraries into a self contained project. Nevertheless, if some compilation errors arise, please check the aforementioned versions. The most relevant files on the repository are detailed as follows:
-
-```
-- backupFunctions.cs --> Operates on parameters within system modeling, such as raw phase and angle vectors extracted from a system's response.
-- DifferentialEquations.cs --> Handles system model representations, transfer functions arithmetics, contains Runge–Kutta methods, prints different model representations of a system.
-- fastFourierTransform.cs --> Transforms time space vectors into the frequency (fast Fourier transform) and viceversa (inverse fast Fourier transform).
-- Matrix.cs --> Handles matrices in an efficient manner.
-- MainWindow.xaml --> Contains the code required by WPF to launch the GUI for the user.
-- MainWindow.xaml.cs --> Handles user requests and returns required outputs.
-```
-<br />
-UPDATE (09.2023): Due to a recent change of the chart visualization library, it is worth noticing at the moment only the time response and frequency spectrum can be displayed graphically. The authors are currently updating the Bode and Nichols diagrams. Nevertheless, besides visualization, all functions are implemented and fully functional. The user simply needs to print the outputs or create methods to use them.
 <br />
 <br />
 
@@ -48,47 +36,10 @@ UPDATE (09.2023): Due to a recent change of the chart visualization library, it 
 The contributions of this repository can be summarized as follows:
 
 ```
-- Algorithms for handling differential equations, transfer functions, and state space representations
-- Algorithms to manipulate matrices in an intuitive and efficient manner
-- Algorithms to operate on system response parameters (e.g. angle, phase, etc.)
-- An intuitive GUI (with similar nomenclature as MATLAB for transfer functions) to analyze systems time and frequency response
-- An open source code, which can be used for teaching of fundamentals of control systems.
+- Algorithms written in translatable code to handle vectors in space.
+- Algorithms using machine learning to calculate the circularity of a set of points taken from a manufactured cone frustum.
+- Visualization tools for the tool path in space.
 ```
-
-## Examples of GUI usage
-
-### Time response to a Sine-wave-like excitement signal
-
-The following figure shows the time response of a system to a sine wave excitement signal of 4Hz. Note that in order to obtain the time response, the user needs to do the following:
-
-```
-- Input the transfer function: [numerator separated by commas];[denominator separated by commas]
-- Click on Create Model
-- Input the sampling time (dt), initial time (t(t0)), and final time in seconds.
-- If the user requires a step response, click on Step response. For sine wave excitements, please input the frequency of the sine wave and click on Sine response.
-- The user can then click on get time response or view frequency spectrum.
-- Although visualizations for Bode and Nichols charts are not available at the moment, the user can still click them and extract the frequency responses from the library.
-```
-
-<p align="center">
-   <img src="/Visualizations/Sine_response.PNG" width="650" />
-</p>
-
-### Time response to a Step-like excitement signal
-
-The following figure shows the time response of a system to a step-like excitement signal:
-
-<p align="center">
-  <img src="/Visualizations/Systems_time_response.PNG" width="650" />  
-</p>
-
-### Frequency spectrum of the input signal
-
-The following figure shows the frequency spectrum of an input sine-wave-like signal of 52Hz:
-
-<p align="center">
-   <img src="/Visualizations/Frequency_spectrum.PNG" width="650" />
-</p>
 
 ## License
 
