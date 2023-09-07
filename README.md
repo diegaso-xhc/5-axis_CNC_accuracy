@@ -1,4 +1,4 @@
-# Calculate the accuracy of 5-axis CNCs
+# 5-axis CNCs Accuracy
 
 ## Overview of the repostitory
 <div align="justify">
