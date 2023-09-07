@@ -8,7 +8,10 @@ Five axis CNCs are essential for the manufacturing of highly complex mechanical 
 <br />
 
 A common measurement of the accuracy of a five axis CNC is the circularity of the outter circle of a cone frustum tilted in space. After the CNC being evaluated finishes the material remotion from this cone frustum, precision tools are used to sample points around its circumference. However, extracting the circularity values of this points set is not trivial as the number of points, positions, among other parameters, change depending on the control parameters of the machine, the operator using the measurement tool, etc. 
-
+<br />
+<p align="center">
+   <img src="/Visualizations/Cone_milling.png" width="600" />
+</p>
 <br />
 
 This repository shows a Matlab implementation of an algorithm customized for the circularity measurements of five axis CNC via manufacturing of a cone frustum.
@@ -16,7 +19,7 @@ This repository shows a Matlab implementation of an algorithm customized for the
 <br /> 
 
 <p align="center">
-   <img src="/Visualizations/Circularity_plot.png" width="700" />
+   <img src="/Visualizations/Circularity_plot.png" width="600" />
 </p>
 
 <br />
