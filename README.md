@@ -2,6 +2,7 @@
 
 ## Overview of the repostitory
 <div align="justify">
+
 Five axis CNCs are essential for the manufacturing of highly complex mechanical parts. In some applications, such as aerospace industry, the low error tolerances for the dimensions of a mechanical part, requires an extremely high accuracy on the manufacturing CNCs. 
 
 <br />
@@ -28,8 +29,8 @@ The repository consists of a versatile toolbox to handle objects in space using 
 
 Additionally all functions within the repository were written so they can be easily translated into other languages, such as c++, c#, python. Therefore, proprietary functions have only been included for visualization.
 
-<br />
-<br />
+
+
 
 ## Contributions
 
