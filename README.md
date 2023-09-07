@@ -12,7 +12,7 @@ This toolbox was used on for the development of the <a href="https://www.science
 <br /> 
 <br /> 
  <p align="center">
-   <img src="/Visualizations/Circularity_plot" width="700" />
+   <img src="/Visualizations/Circularity_plot.png" width="700" />
 </p>
 <br />
 
