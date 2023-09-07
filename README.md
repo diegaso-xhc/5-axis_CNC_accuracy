@@ -2,14 +2,12 @@
 
 ## Overview of the repostitory
 <div align="justify">
-Simulating systems response is crucial to understand them and to develop suitable controllers depending on application requirements. For instance in 5-axis CNCs, the control parameters used for each one of their axes could have a considerable impact on the overall manufacturing accuracy. Likewise, in certain robotics applications, controllers need to operate with high precision. 
+Five axis CNCs are essential for the manufacturing of highly complex mechanical parts. In some applications, such as aerospace industry, the low error tolerances for the dimensions of a mechanical part, requires an extremely high accuracy on the manufacturing CNCs. 
 <br />
+A common measurement of the accuracy of a five axis CNC is the circularity of the outter circle of a cone frustum tilted in space. After the CNC being evaluated finishes the material remotion from this cone frustum, precision tools are used to sample points around its circumference. However, extracting the circularity values of this points set is not trivial as the number of points, positions, among other parameters, change depending on the control parameters of the machine, the operator using the measurement tool, etc. 
 <br />
-Several high performance platforms (e.g. Matlab) offer a control systems toolbox which can be used reliably to model and control systems. Nevertheless, these toolboxes tend to be built on proprietary functions, which can't be customized depending on user needs. This repository is intended to provide an open source platform with similar functionalities for representing systems responses and understanding what controllers are suitable for them. Additionally, thanks to its versatility and structure, this repository can be used for teaching purposes, helping students understand the magic happening behing control toolboxes.
-<br /> 
+This repository shows a Matlab implementation of an algorithm customized for the circularity measurements of five axis CNC via manufacturing of a cone frustum.
 <br />
-This toolbox was used on for the development of the <a href="https://www.sciencedirect.com/science/article/pii/S2212827117302305">scientific article</a>, which shows an approach to reduce inaccuracies on five-axis CNCs.
-<br /> 
 <br /> 
  <p align="center">
    <img src="/Visualizations/Circularity_plot.png" width="700" />
@@ -18,7 +16,9 @@ This toolbox was used on for the development of the <a href="https://www.science
 
 ## Understanding repository
 
-The repository was developed in C#, using the following software version:
+The repository consists of a versatile toolbox to handle objects in space using concepts of linear algebra. Machine learning concepts such as gradient descent methods in combination with normal distributions concepts were implemented to robustly return the circularity value under different conditions. These algorithms were validated in cooperation with the <a href="https://www.itri.org.tw/english/ListStyle.aspx?DisplayStyle=20&SiteID=1&MmmID=617731521661672477">Industrial Technology Research Institute of Taiwan</a>.
+<br />
+https://www.itri.org.tw/english/ListStyle.aspx?DisplayStyle=20&SiteID=1&MmmID=617731521661672477
 
 ```
 - Microsoft Visual Studio Community 2019 (Version 16.11.29)
