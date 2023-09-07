@@ -31,7 +31,7 @@ Additionally all functions within the repository were written so they can be eas
 
 <br />
 
-To run the code, simply run calculateCircularityValue.m with your CNC point data located in the ./data folder.
+To run the code, simply run calculateCircularityValue.m with your CNC point data located in the ./CNC_data folder. The resulting circularity value is calculated in the same unit as your data (normally mm).
 
 
 ## Contributions
@@ -46,4 +46,4 @@ The contributions of this repository can be summarized as follows:
 
 ## License
 
-Developed by Diego Hidalgo C. (2021). This repository is intended for research purposes only. If you wish to use any parts of the provided code for commercial purposes, please contact the author at hidalgocdiego@gmail.com.
+Developed by Diego Hidalgo C. (2017). This repository is intended for research purposes only. If you wish to use any parts of the provided code for commercial purposes, please contact the author at hidalgocdiego@gmail.com.
