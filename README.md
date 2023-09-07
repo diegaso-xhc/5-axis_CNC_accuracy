@@ -29,7 +29,9 @@ The repository consists of a versatile toolbox to handle objects in space using 
 
 Additionally all functions within the repository were written so they can be easily translated into other languages, such as c++, c#, python. Therefore, proprietary functions have only been included for visualization.
 
+<br />
 
+To run the code, simply run calculateCircularityValue.m with your CNC point data located in the ./data folder.
 
 
 ## Contributions
