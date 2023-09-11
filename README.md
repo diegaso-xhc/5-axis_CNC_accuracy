@@ -1,6 +1,6 @@
 # 5-axis CNCs Accuracy
 
-## Overview of the repostitory
+## Overview of the repository
 <div align="justify">
 
 Five axis CNCs are essential for the manufacturing of highly complex mechanical parts. In some applications, such as aerospace industry, the low error tolerances for the dimensions of a mechanical part, requires an extremely high accuracy on the manufacturing CNCs. 
